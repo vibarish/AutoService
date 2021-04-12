@@ -1,0 +1,12 @@
+﻿/*фотогалерея*/
+.photo {
+  height: 70rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo img {
+  width: 60rem;
+}

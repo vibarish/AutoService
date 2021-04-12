@@ -1,0 +1,32 @@
+﻿/*популярные услуги*/
+.popular {
+  background-image: url('/img/back4.png');
+  height: 40rem; /*540px */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+}
+.popular .div1 {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+}
+
+@media (max-width:800px) {
+  .popular {
+    background-image: url('/img/back4.png');
+    height: 100rem; /*540px */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+  }
+  .popular .div1 {
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 4rem;
+    text-align: left;
+  }
+}

@@ -1,0 +1,140 @@
+﻿/*Раздел для стоимости запчастей*/
+.compare-prices {
+  height: 80rem; /*1260px */
+  background-color:rgb(53, 51,43);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.compare-prices .no {
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 1.5rem;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50rem; /*1140px */
+}
+
+.compare-prices .no img {
+  width: 3rem;
+}
+
+.compare-prices .no .no-list {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.compare-prices form { /*Узнайте стоимость запчасти*/
+  display: flex;
+  flex-flow: column nowrap;
+  height: 20rem; /* 312px */
+  width: 60rem; /* 1140px */
+  background-color: rgb(218, 214, 214);
+  align-items: center; /*Расположение вдоль поперечной оси*/
+  justify-content: space-evenly;
+  padding: 1.5rem 3rem;
+  border: solid gold;
+  border-radius: 0.5rem;
+  box-shadow: 0.4rem 0.4rem 0.5rem gray;
+  font-size: 1.5rem;
+}
+
+.compare-prices form .footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: inherit;
+}
+
+td {                /*Таблица*/
+  color: white;
+  font-size: 1.5rem;
+  width: 14rem; /*300px */
+  height: 5rem; /*100px */
+  margin: 5rem;
+}
+
+.compare-prices button {
+  background-color: rgb(254, 200, 32);
+  padding: 0.75rem;
+  border-radius: 1rem;
+  border: 0 transparent;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 3px 3px 5px gray;
+  width: 14rem;
+  height: 3rem;
+  position: relative;
+  top: 1.6rem;
+  left: 1.5rem;
+}
+
+.compare-prices input {
+  width: 14rem;
+  height: 3rem;
+}
+
+@media (max-width:800px) {
+  .compare-prices {
+    height: 150rem; /*1260px */
+    background-color:rgb(53, 51,43);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .compare-prices form { /*Узнайте стоимость запчасти*/
+    display: flex;
+    flex-flow: column nowrap;
+    height: 45rem; /* 312px */
+    width: 85rem; /* 1140px */
+    background-color: rgb(218, 214, 214);
+    align-items: center; /*Расположение вдоль поперечной оси*/
+    justify-content: space-evenly;
+    padding: 1.5rem 3rem;
+    border: solid gold;
+    border-radius: 0.5rem;
+    box-shadow: 0.4rem 0.4rem 0.5rem gray;
+    font-size: 3rem;
+  }
+
+  .compare-prices .no {
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 3rem;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90rem;
+  }
+
+  .compare-prices button {
+    background-color: rgb(254, 200, 32);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0 transparent;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 0.9rem;
+    box-shadow: 3px 3px 5px gray;
+    width: 18rem;
+    height: 10rem;
+  }
+  
+  .compare-prices input {
+    width: 18rem;
+    height: 4rem;
+  }
+
+  td {                /*Таблица*/
+    color: white;
+    font-size: 3rem;
+    width: 15rem; /*300px */
+    height: 6rem; /*100px */
+    margin: 10rem;
+  }
+}
+

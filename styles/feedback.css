@@ -1,0 +1,35 @@
+﻿/*отзывы*/
+.feedback {
+  height: 47rem; /*800px */
+  background-color: rgb(246,242, 239);
+}
+.feedback .div1 {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 1.2rem;
+  justify-content: space-evenly;
+}
+
+.feedback img {
+  width: 20rem;
+}
+
+@media (max-width:800px) {
+  .feedback {
+    height: 250rem; /*800px */
+    background-color: rgb(246,242, 239);
+  }
+
+  .feedback .div1 {
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 3rem;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  .feedback img {
+    width: 40rem;
+  }
+  
+}

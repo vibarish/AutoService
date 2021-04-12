@@ -1,0 +1,96 @@
+﻿/*Раздел для обратной связи*/
+.questions {
+  height: 47rem; /* 700px */
+  background-image: url('/img/18610291_2.png');
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.questions form { /*Есть вопросы к нашим мастерам?*/
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 30% auto auto auto;
+  grid-template-areas: "tx tx tx tx"
+                        "nm quest pic text"
+                        "ph quest pic text"
+                        "cr quest pic text";
+  height: 30rem; /* 524px */
+  width: 60rem; /* 1140px */
+  background-color: rgb(218, 214, 214);
+  align-items: center; /*Расположение вдоль поперечной оси*/
+  justify-content: space-evenly;
+  padding: 2rem 4rem;
+  border: solid gold;
+  border-radius: 0.5rem;
+  box-shadow: 0.4rem 0.4rem 0.6rem gray;
+  font-size: 1.3rem;
+}
+
+.questions textarea {
+  width: 15rem;
+}
+
+.questions form .head {
+  grid-area: tx;
+}
+
+.questions form .name {
+  grid-area: nm;
+}
+
+.questions form .phone {
+  grid-area: ph;
+}
+
+.questions form .car {
+  grid-area: cr;
+}
+
+.questions form .question {
+  grid-area: quest;
+}
+
+.questions form .pic {
+  grid-area: pic;
+}
+
+.questions form .text {
+  grid-area: text;
+}
+
+.questions img {
+  width: 10rem;
+}
+
+@media (max-width:800px) {
+  .questions {
+    height: 150rem; /* 700px */
+    background-image: url('/img/18610291_2.png');
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .questions form { /*Есть вопросы к нашим мастерам?*/
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "tx tx tx tx"
+                          "nm quest pic text"
+                          "ph quest pic text"
+                          "cr quest pic text";
+    height: 120rem; /* 524px */
+    width: 80rem; /* 1140px */
+    background-color: rgb(218, 214, 214);
+    align-items: center; /*Расположение вдоль поперечной оси*/
+    justify-content: space-evenly;
+    padding: 2rem 4rem;
+    border: solid gold;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 0.5rem 0.7rem gray;
+    font-size: 3rem;
+  }
+}

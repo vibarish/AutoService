@@ -1,0 +1,145 @@
+html {
+  font-size: 1vw;
+  overflow-x: hidden;
+}
+
+body {
+  padding: auto;
+  font-family: "Arial narrow";
+  overflow-x: hidden;
+  margin: 0; /*Убираем белую полосу по бокам*/
+}
+
+main {              /*Масштабирование сайта вцелом*/
+  max-width: 1920px;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto; /*Позиционирование по центру*/
+  margin-right: auto;
+ }
+/*кнопки*/
+button {
+  background-color: rgb(254, 200, 32);
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0 transparent;
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 0.4rem;
+  box-shadow: 3px 3px 5px gray;
+  height: 2.5rem;
+}
+
+input, textarea {
+  font-size: 1rem;
+  border-radius: 0.4rem;
+}
+/*Форма обратной связи на странице*/
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 20rem; /* 432px */
+  width: 13rem;  /* 342px */
+  background: linear-gradient(white,rgb(218, 214, 214));
+  align-items: left; /*Расположение вдоль поперечной оси*/
+  justify-content: space-evenly;
+  padding: 2rem 3rem;
+  border: solid gold;
+  border-radius: 0.3rem;
+  box-shadow: 3px 3px 5px gray;
+  font-size: 1.5rem;
+}
+
+/*Различные виды Шрифтов*/
+.text-orange {
+  color:rgb(255, 208, 0);
+  margin: 3px;
+}
+
+.text-white {
+  color: white;
+  margin: 10px;
+}
+
+.text-center {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+#backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 2;
+  pointer-events: none;
+  display: none;
+}
+
+#backdrop.visible {
+  display: block;
+  pointer-events: all;
+}
+
+.new-class {
+  color: aliceblue;
+}
+
+@media (min-width:1920px) {
+  html {
+    font-size: 15px; 
+  }
+}
+
+@media (max-width:800px) { /* Для мобильных устройств*/
+   main {
+    width: 100rem;
+  }
+
+    body {
+      padding: auto;
+      font-family: "Arial narrow";
+      overflow-x: visible;
+      margin: 0; /*Убираем белую полосу по бокам*/
+  }
+
+  button {
+    background-color: rgb(254, 200, 32);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 0 transparent;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 5px gray;
+    height: 10rem;
+  }
+
+  .text-center {
+    text-align: center;
+    font-size: 6rem;
+  }
+
+  form {
+    display: flex;
+    flex-flow: column wrap;
+    height: 60rem; /* 432px */
+    width: 40rem;  /* 342px */
+    background: linear-gradient(white,rgb(218, 214, 214));
+    align-items: left; /*Расположение вдоль поперечной оси*/
+    justify-content: space-evenly;
+    padding: 3rem 4rem;
+    border: solid gold;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 5px gray;
+    font-size: 4rem;
+  }
+
+  input, textarea {
+    font-size: 3rem;
+    border-radius: 0.4rem;
+  }
+}

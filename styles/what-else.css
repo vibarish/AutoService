@@ -1,0 +1,40 @@
+﻿/*Раздел для записи на сервис*/
+.what-else {
+  height: 60rem; /* 890px */
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 1.5rem;
+}
+
+.what-else img {
+  width: 10rem;
+}
+
+.what-else .div1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.what-else .div2 {
+  display: flex;
+  flex-flow: row wrap;
+}
+.what-else .div3 {
+  display: flex;
+  flex-flow: row;
+}
+
+@media (max-width:800px) {
+  .what-else {
+    height: 180rem; /* 890px */
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 4rem;
+  }
+
+  .what-else img {
+    width: 25rem;
+  }
+  
+}

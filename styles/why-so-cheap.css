@@ -1,0 +1,38 @@
+﻿/*Список преимуществ сервиса*/
+.why-so-cheap {
+  background-color: white;
+  height:  55rem; /*863px*/
+}
+
+.why-so-cheap .div1 {
+  font-size: 1.7rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.why-so-cheap .div1 .div1, .why-so-cheap .div1 .div2,
+.why-so-cheap .div1 .div3, .why-so-cheap .div1 .div4 {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 35rem;
+  justify-content: space-evenly;
+}
+
+.why-so-cheap img {
+  width: 6rem;
+}
+
+@media (max-width:800px) {
+  .why-so-cheap {
+    background-color: white;
+    height:  80rem; /*863px*/
+  }
+  .why-so-cheap .div1 {
+    font-size: 2.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  
+}

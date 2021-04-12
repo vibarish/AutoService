@@ -1,0 +1,40 @@
+﻿/*желтая полоса со значками*/
+.yellow {
+  background-color: rgb(254, 200, 32);
+  height: 20rem; /* 300px*/
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  text-align: center;
+  box-sizing: border-box;
+  
+}
+/*заголовок в желтой полосе */
+
+.yellow .div1 {
+  display: flex;
+  flex-flow: row nowrap;
+  vertical-align: middle;
+  font-size: 2rem;
+}
+
+.yellow img {
+  width: 7rem;
+}
+
+@media (max-width:800px) {
+  .yellow {
+    background-color: rgb(254, 200, 32);
+    height: 80rem; /* 300px*/
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    font-size: 3rem;
+    text-align: center;
+    box-sizing: border-box;
+    
+  }
+}
