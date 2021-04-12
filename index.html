@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Клуб Сервис</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/club.css">  
+  <link rel="stylesheet" href="styles/yellow.css">
+  <link rel="stylesheet" href="styles/action.css">
+  <link rel="stylesheet" href="styles/why-so-cheap.css">
+  <link rel="stylesheet" href="styles/profit.css">
+  <link rel="stylesheet" href="styles/popular.css">
+  <link rel="stylesheet" href="styles/what-else.css">
+  <link rel="stylesheet" href="styles/compare-prices.css">
+  <link rel="stylesheet" href="styles/every-client.css">
+  <link rel="stylesheet" href="styles/photo.css">
+  <link rel="stylesheet" href="styles/feedback.css">
+  <link rel="stylesheet" href="styles/questions.css">
+  <link rel="stylesheet" href="styles/contacts.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="scripts/vendor.js" defer></script>
+  <script src="scripts/app.js" defer></script>
+  <!-- <script src="scripts/dateHandler.js" defer></!--> -->
+</head>
+
+<body>
+  <div id="backdrop"></div>
+  <main>
+    <!--Вступление-->
+    <section class="club"> 
+      <!--Шапка-->
+      <div class="head">  
+        <div class="logo">
+           <img src="img/logo.png" alt="Сервис Клуб">
+        </div>
+        <div>
+          <img src="img/pin_fill_sharp_circle.png" alt="">
+        </div>
+        <div>
+          <p class="text-white" id="city">   Санкт-Петербург, ул. Боровая
+          д. 14 <br> 9:00 -20:00, без выходных
+          </p>
+        </div>
+        <div>
+          <p class="text-white"> <img src="img/tel.png" alt="Телефон">    8 961 011 11-16 </p>
+        </div>
+        <div>
+          <button type="button" id="btn-get-call"> ЗАКАЗАТЬ ЗВОНОК </button> 
+        </div>
+      </div>
+      <!-- Всплывающее окно -->
+      <form id="pop-up-form" class="little-form"> 
+        Ваш автомобиль
+        <input type="text" name="car" maxlength="12"
+        placeholder="Ваш автомобиль"> <br>
+        Телефон
+        <input type="text" name="phone-number" maxlength="12" 
+        placeholder="Телефон"> <br>
+        Дата и время для записи
+        <input id="pop-date" type="date" name="date" min="" max="2021-01-01" required>
+        <br>
+        <button type="button" id="pop-up-book"> ЗАПИСАТЬСЯ СЕЙЧАС </button> 
+     </form> 
+
+      <!--Центральный текст-->
+      <div class="central">
+        <div class="big">
+            <div class="text-white"> ЗАМЕНА РАСХОДНИКОВ И МАСЛА </div>
+            <div class="text-orange"> ПО АНТИКРИЗИСНЫМ ЦЕНАМ </div>
+        </div>
+        <div class="little">
+        <p class="text-white"> Вы можете привезти свои расходники <br>
+                                или купить у нас выгоднеее чем в exist </p>
+        </div>
+        <div class="banner">
+          <img src="img/ar.png" alt="">    
+        </div>
+      </div>>
+    </section>
+
+    <section class="yellow">
+        <div>
+           <img src="img/fin.png" alt="fin">
+        </div>
+        <div>
+          <p> ХОРОШИЕ ЦЕНЫ <br> ОТ НАШИХ ПОСТАВЩИКОВ</p> 
+        </div>
+        <div>
+          <img src="img/gl1.png" alt="fin">
+        </div>
+        <div>
+          <p> ПРОИЗВЕДЕМ <br> РЕМОНТ ГЛУШИТЕЛЯ </p>          
+        </div>
+        <div>
+          <img src="img/sound.png" alt="fin">
+        </div>
+        <div>
+         <p> НАСТРОИМ ЗВУК <br> ВЫХЛОПА </p>     
+        </div>
+      
+    </section>
+
+    <!--АКЦИЯ КАЖДУЮ НЕДЕЛЮ-->
+    <section class="action"> 
+      <div class="text-center"> <!--Заголовок-->
+        <p class="text-white">  <h class="text-orange"> АКЦИЯ</h>  КАЖДУЮ НЕДЕЛЮ</p>
+      </div>
+      <div class="div1"> <!--Основной блок-->
+       <form id="permanent-form" class="little-form"> <!--Форма обратной связи-->
+          Ваш автомобиль
+          <input type="text" name="car" maxlength="12"
+          placeholder="Ваш автомобиль"> <br>
+          Телефон
+          <input type="text" name="phone-number" maxlength="12" 
+          placeholder="Телефон"> <br>
+          Дата и время для записи
+          <input id="permanent-date" type="date" name="date" min="2020-01-01" max="2021-01-01" required>
+          <br>
+          <button  type="button" id="permanent-book"> ЗАПИСАТЬСЯ СЕЙЧАС </button> 
+       </form> 
+       <div class="arrow">
+         <div class="div1">
+            <div>
+              <img src="img/ar3.png" alt="fin"> 
+            </div>
+           <h class="text-white"> <h class="text-orange"> Бесплатная</h>  замена масла в <br> автомобиле </h> 
+         </div>
+         <div class="div2">
+            <img src="img/8&5.png" alt="">
+         </div>
+       </div>
+      </div>
+    </section>
+
+    <section class="why-so-cheap">
+        <p class="text-center"> ПОЧЕМУ МЫ ДЕЛАЕМ ТАКИЕ <h class="text-orange"> НИЗКИЕ</h>  ЦЕНЫ? </p>
+        <div class="div1">
+          <div class="div3">
+            <img src="img/1  2  3 .png" alt="" srcset="">
+          </div>
+          <div class="div1">
+            <div>
+               <p > Нам самим надоели <br> цены 15-20 тыс. за ТО</label> </p> 
+            </div>
+            <div>
+              <p> Нам надоело ездить <br> в непонятные гаражи <br> к горемастерам </p>
+            </div>
+            <div>
+              <p> Нам надоело ждать 1-2  недели<br> запчасти и ехать за ними в другой <br> конец города </p>            
+            </div>            
+          </div>
+          <div class="div4">
+            <img src="img/4  5  6 .png" alt="">
+              <source>
+          </div>
+          <div class="div2">
+            <div>
+              <p> Мы открываем свой сервис  <br> с ценами как для друзей </p>
+            </div>
+            <div>
+              <p> Чистый и качественный <br> автосервис </p>
+            </div>
+            <div>
+              <p> Заказываем и доставляем <br> запчасти прямо в сервис <br> дешево </p> 
+            </div>            
+          </div>
+        </div>
+    </section>
+
+    <section class="profit">
+      <div class="text-center">
+        <p class="text-white"> ТАК НА ЧЕМ ЖЕ НАМ ЗАРАБАТЫВАТЬ?</p>
+      </div>
+      <div class="div1"> 
+        <div>
+           <img src="img/1.png" alt="refit">
+        </div> 
+        <div>
+          <div>
+          <p class="text-white"> <h class="text-orange"> Постоянные</h>  клиенты, <br> отсутствие затрат на рекламу </p>  
+          </div>
+          <p class="text-white"> Если мы даем хорошие цены и хороший <br>
+          сервис, Вы приедете к нам еще? <br>
+          Думаем да, и нам нам не придется тратить <br>
+          деньги на поиск новых клиентов, а эти <br>
+          затраты закладываются в ремонт обычных сервисов </p>         
+        </div>       
+        <div>
+           <img src="img/zapchasti-auto.png" alt="zapchasti-auto">
+        </div>
+        <div>
+          <p class="text-white"> <h class="text-orange"> Надежные</h>  поставщики <br> без посредников </p>
+          <p class="text-white"> Мы покупаем расходник и запчасти <br>
+          без посредников, даем Вам хорошую <br> 
+          цену  и сами немного зарабатываем </p>          
+        </div>
+      </div>
+    </section>
+
+    <section class="popular">
+      <div class="text-center">
+        <p class="text-white">   ПОПУЛЯРНЫЕ УСЛУГИ </p>
+      </div>
+      <div class="div1">
+      <div>
+        <p class="text-orange"> ЗАМЕНА КОЛОДОК</p>
+        <p class="text-white"> ПЕРЕДНИЕ..............500 р <br>
+        ЗАДНИЕ................500 р <br>
+        ВСЕ...................900 р</p> 
+      </div>
+      <div>
+        <p class="text-orange"> ЗАМЕНА ФИЛЬТРОВ</p>
+        <p class="text-white"> ТОПЛИВНЫЙ........500 р <br>
+        САЛОНА...........300 р <br>
+        ДВИГАТЕЛЯ........800 р <br>
+        МАСЛЯНЫЙ.........400 р </p> 
+      </div>  
+      </div>
+      
+    </section>
+
+    <section class="what-else">
+      <div class="text-center">
+        <p> ЧТО МЫ ЕЩЕ МОЖЕМ ВЫПОЛНИТЬ?</p>
+      </div>
+      <div class="div1">
+        <div>
+            <img src="img/Remont-dvigatelya.png" alt=""> 
+            <p> Ремонт двигателя <br> от 500 р </p>
+            <img src="img/projects8.png" alt=""> 
+            <p> Ремонт ходовой <br> от 400 р</p>
+        </div>
+        <div>
+            <img src="img/diagnost_auto.png" alt=""> 
+            <p> Диагностика <br> от 200 р </p>
+            <img src="img/2673331.png" alt=""> 
+            <p> Ремонт коробки <br> от 400 р </p>
+        </div>
+        <div>
+            <img src="img/15023221.png" alt="">
+            <p> Замена масла <br> от 400 р </p>
+            <img src="img/remont-elektriki-ford-v-chertanovo.png" alt="">
+            <p> Электрика <br> от 500 р </p>
+        </div>
+        <div class="div3">
+        <form action="" method="">
+          Ваш автомобиль
+          <input type="text" placeholder="Ваш автомобиль"> 
+          Телефон 
+          <input type="text" placeholder="Телефон"> 
+          Описание неисправности 
+          <input type="text" placeholder="Описание неисправности" name="" id="">
+          <button type="button" id="get-price"> УЗНАТЬ СТОИМОСТЬ </button> 
+        </form>
+        </div>        
+      </div>
+    </section>
+
+    <section class="compare-prices">
+      <div class="text-center">
+         <p class="text-white"> <h class="text-orange"> СРАВНИТЕ</h>  ЦЕНЫ НА ЗАПЧАСТИ </p>
+      </div>
+      <table class="tb">
+        <tr>
+          <td>#</td>
+          <td>ДЕТАЛЬ</td>
+          <td>НАШ СЕРВИС</td>
+          <td>У ДИЛЕРА</td>
+          <td> EXIST И ДРУГИЕ</td>
+          </tr>
+          <tr><td>01</td>
+          <td>Mark</td>
+          <td>500</td>
+          <td>1000</td>
+          <td>650</td></tr>
+          <tr><td>02</td>
+          <td>Jacob</td>
+          <td>1200</td>
+          <td>2000</td>
+          <td>1420</td></tr>
+      </table>
+      <div class="no">
+        <div class="no-list">
+          <p class="text-white"> <img src="img/Иконка_галочки_(ei).png" alt=""> Не нужно беспокоиться, а подойдет ли Вам запчасть <br>
+            так как ее будет подбирать мастер
+          </p>
+          <p class="text-white">  <img src="img/Иконка_галочки_(ei).png" alt=""> Не нужно ехать и стоять в очередях в магазине</p>
+          <p class="text-white"> <img src="img/Иконка_галочки_(ei).png" alt="">Не нужно переплачивать</p>          
+        </div>
+        <div><img src="img/33.png" alt=""></div>
+        <div>        <p class="text-white"> Все это мы сделаем за Вас! <h class="text-orange"> БЕСПЛАТНО</h>  <br>
+        Запчасти будут к вашему приезду</p></div>
+      </div>
+      
+      <form action="/" method="">
+        <div class="head">
+          <p class="text-center"> <h class="text-orange">УЗНАЙТЕ  </h> СТОИМОСТЬ ЗАПЧАСТИ</p> 
+          <p> Цена придет Вам по смс после обработки</p>
+        </div>
+        <div class="footer">
+          <label>
+            Ваш автомобиль
+          <input type="text" placeholder="Ваш автомобиль">
+          </label>
+          <label for="">
+             Артикул запачасти 
+             <input type="text" placeholder="Артикул запчасти">
+          </label>
+          <label for="">
+              Ваш телефон
+              <input type="text" name="phone-for-parts" 
+              placeholder="Ваш телефон"> <br>
+          </label>
+          <div>
+            <button id="know-price"> ЗАКАЗАТЬ ЗВОНОК МАСТЕРА </button>  
+          </div>
+          
+        </div>
+      </form>
+    </section>
+
+    <section class="every-client">
+      <div class="text-center">
+        <p> КАЖДЫЙ КЛИЕНТ ПОЛУЧАЕТ: </p>
+      </div>
+      <div class="div1">
+        <div>
+          <img src="img/4.png" alt="">
+        </div>
+        <div>
+          <p> НАКОПИТЕЛЬНУЮ <br> СКИДКУ</p>
+        </div>
+        <div>
+          <img src="img/img_443460.png" alt="">
+        </div>
+        <div>
+          <p> ЗЕРНОВОЙ КОФЕ, <br> КИТАЙСКИЙ ЧАЙ</p>
+        </div>
+        <div>
+          <img src="img/img_517580.png" alt=""> 
+        </div>
+        <div>
+          <p> WI-FI</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="photo">
+      <div class="text-center">
+        <p> ФОТО МАСТЕРСКОЙ </p>
+      </div>
+      <div class="pictures">
+        <img src="img/collazh.png" alt="мастерская">
+      </div>
+    </section>
+
+    <section class="feedback">
+      <div class="text-center">
+         <p> ОТЗЫВЫ КЛИЕНТОВ </p>
+      </div>
+      <div class="div1">
+        <div>
+          <p> Игорь Г. </p>         
+          <img src="img/otzuv5.png" alt="">
+          <p>
+            Сервис и вежливость персонала на высоком<br>
+            уровне, нет проблемы с авто, чтобы не могли её<br>
+            устранить, любые запасные части, доставка в<br>
+            кратчайшие сроки. Стоимость работ и запчастей<br>
+            ниже, чем во многих автосервисах. Я уже<br>
+            обслуживаюсь более 2х лет, никогда не было<br>
+            проблем. Спасибо руководству и всему вежливому<br>
+            персоналу.<br>
+          </p>
+        </div>
+        <div>
+          <p> Андрей П. </p>
+          <img src="img/2732227403.png" alt="">
+          <p>
+            Удобно наличие запасных частей по доступной цене<br>
+            и довольно высокий уровень обслуживания<br>
+            клиентов.<br>
+            Вопросов по качеству ремонта не возникало,<br>
+            да и гарантия на проведённые работы всё таки<br>
+            подстраховывает.<br>
+            Еще одна удобная "фишка" - бронирование ремонта<br>
+            и запчастей посредством мессенджеров.<br>
+          </p> 
+        </div>
+        <div>
+          <p> Алексей О. </p>
+          <img src="img/1428313275general_pages_06_April_2015_i23066_teoriya_i_jizn.png" alt="">
+          <p>
+            Спасибо за отличный сервис. Эвакуатор приехал<br>
+            вовремя. Водитель знаток своего дела,<br>
+            аккуратно и быстро погрузил автомобил. Принимал<br>
+            автомобиль мастер Сердюк Алексей<br>
+            Дмитриевич. Быстро разобрались и нашли причину<br>
+            поломки автомобиля. Алексей все доступно <br>
+            объяснил и рассказал. Очень вежливый и хороший<br>
+            специалист. А также большое спасибо всему<br>
+            персоналу, молодцы. Я думаю многим автосервисам<br>
+            есть чему поучиться у компании.<br>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="questions">
+      <form action="" method="">
+        <div class="head">
+          <p class="text-center">ЕСТЬ <h class="text-orange"> ВОПРОСЫ</h>  К НАШИМ МАСТЕРАМ? </p> 
+          <p class="text-center"> Задайте их через нашу форму обратной связи</p> 
+        </div>
+        <div class="name">
+           Имя <br>
+          <input type="text" placeholder="Имя"> 
+        </div>
+        <div class="phone">
+           Телефон <br>
+          <input type="text" placeholder="Телефон">           
+        </div>
+        <div class="car">
+           Ваш автомобиль  <br>
+          <input type="text" placeholder="Ваш автомобиль">          
+        </div>
+        <div class="question">
+          Задайте ваш вопрос <br>
+          <textarea name="set-question" id="" cols="10" rows="10">          
+          </textarea> <br>
+          <button id="master-call"> ЗАКАЗАТЬ ЗВОНОК МАСТЕРУ </button> 
+        </div>
+        <div class="pic">
+         <img src="img/tech.png" alt=""> 
+        </div>
+        <div class="text">
+          <p>
+            Вам ответит:<br>
+            Сергей Коневодов<br>
+            Специалист по тюнингу<br>
+            выхлопных систем<br>
+            Стаж работы 16 лет.<br>
+          </p>
+        </div>
+      </form>
+    </section>
+
+    <section class="contacts"> 
+      <div class="contacts-yellow">
+          <div class="text-center">
+            <p> НАШИ КОНТАКТЫ </p>
+          </div>
+            <div>
+              <img src="img/black_circle.png" alt="">
+              <h> Санкт-Петербург, ул. Боровая
+                д. 14 <br> 9:00 -20:00, без выходных </h>
+            </div>
+            <div>
+              <img src="img/te2.png" alt="">
+              <h> 8 961 011 11-16 </h>
+            </div>  
+            <div>
+              <img src="img/step01.png" alt="">
+              <h> logon@domain.com </h> 
+            </div>             
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2002.5577022530856!2d30.345823618186046!3d59.92105738112533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631b276bcbd87%3A0xbb08b43efd71de96!2z0JHQvtGA0L7QstCw0Y8g0YPQuy4sIDE0LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTE5!5e0!3m2!1sru!2sru!4v1584469575402!5m2!1sru!2sru" 
+          frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </section>  
+  </main>
+</body>
+</html>
