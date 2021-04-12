@@ -1,0 +1,4 @@
+[2020-2-29 15:45:05] layer "pin_fill_sharp_circle.png": Duplicate path: pin_fill_sharp_circle.png
+[2020-2-29 15:45:05] layer "Иконка_галочки_(ei).svg копия": Expected end of input but "\u043A" found.
+[2020-2-29 15:45:05] layer "Иконка_галочки_(ei).svg копия 2": Expected end of input but "\u043A" found.
+[2020-2-29 15:45:05] layer "logon@domain.com": Unsupported extension: com
